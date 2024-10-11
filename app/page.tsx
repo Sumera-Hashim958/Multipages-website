@@ -1,95 +1,29 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <div className={styles.container}>
+        <div className={styles.sidebar}>
+            <div className={styles.logo}>
+                <a href="#"><span>S</span>H</a>
+            </div>
+            <div className="nav-toggler">
+                <span></span>
+            </div>
+            <ul className={styles.nav}>
+                <li><a href="./" className={styles.navItem}><i className="fa fa-home"></i>Home</a></li>
+                <li><a href="./about" className={styles.navItem} target="_blank"><i className="fa fa-user"></i>About</a></li>
+                <li><a href="./Contact" className={styles.navItem} target="_blank"><i className="fa fa-comments"></i>Contact</a></li>
+                <li><a href="./services" className={styles.navItem} target="_blank"><i className="fa fa-list"></i>Services</a></li>        
+            </ul>
+        </div>        
+      <div className={styles.mainContent}>
+        <h1>Hello, My name is <span>Sumera Hashim.</span></h1>
+        <h2>I'm <span>Web Developer</span></h2>
+        <p>I' m a web Developer with extensive experience for over 10 years. My expertise is to create and wesite design, graphic design and many more...This is the main content area where you can add your page content.</p>
+      </div>
+  </div>
   );
 }

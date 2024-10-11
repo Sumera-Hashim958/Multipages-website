@@ -40,3 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+.home{
+  font-size: 100px;
+  background-color: red;
+}

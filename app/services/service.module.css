@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    height: 100vh; /*Full height of the viewport*/
+  }
+  .sidebar{
+    width: 250px;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .logo{
+    padding: 20px;
+    font-family: 'Clicker Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .logo span{
+    color: #f39c12;
+  }
+  .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .navItem{
+    padding: 15px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  .navItem:hover{
+    background-color: #333333;
+  }
+  .navItem i {
+    margin-right: 10px; /* Adds gap between the icon and text */
+  }
+  .mainContent{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .mainContent p{
+    /* flex-grow: 1; */
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  
